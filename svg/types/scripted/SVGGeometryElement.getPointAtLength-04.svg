@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:h="http://www.w3.org/1999/xhtml">
+  <title>When SVGGeometryElement.getPointAtLength is called with an element that can not compute the total length, throw exception</title>
+  <h:link rel="help" href="https://svgwg.org/svg2-draft/types.html#__svg__SVGGeometryElement__getPointAtLength"/>
+  <path id='pathElement1' style='display:none'/>
+  <path id='pathElement2' style='display:contents'/>
+  <path id='pathElement3' style='display:none'  d=""/>
+  <path id='pathElement4' style='display:contents'  d=""/>
+  <rect id='rectElement1' style='display:none'/>
+  <rect id='rectElement2' style='display:contents'/>
+  <rect id='rectElement3' style='display:none' x='' y='' width='' height=''/>
+  <rect id='rectElement4' style='display:contents' x='' y='' width='' height=''/>
+  <rect id='rectElement5' style='display:none' x='0' y='0' width='0' height='0'/>
+  <rect id='rectElement6' style='display:contents' x='0' y='0' width='0' height='0'/>
+  <circle id='circleElement1' style='display:none'/>
+  <circle id='circleElement2' style='display:contents'/>
+  <circle id='circleElement3' style='display:none' cx='' cy='' r='' />
+  <circle id='circleElement4' style='display:contents' cx='' cy='' r='' />
+  <circle id='circleElement5' style='display:none' cx='0' cy='0'/>
+  <circle id='circleElement6' style='display:contents' cx='0' cy='0'/>
+  <polygon id='polygonElement1' style="display:none"/>
+  <polygon id='polygonElement2' style="display:contents"/>
+  <polygon id='polygonElement3' style="display:none" points=''/>
+  <polygon id='polygonElement4' style="display:contents" points=''/>
+  <polyline id='polylineElement1' style='display:none'/>
+  <polyline id='polylineElement2' style='display:contents'/>
+  <polyline id='polylineElement3' style='display:none' points=''/>
+  <polyline id='polylineElement4' style='display:contents' points=''/>
+  <ellipse id='ellipseElement1' style='display:none'/>
+  <ellipse id='ellipseElement2' style='display:contents'/>
+  <ellipse id='ellipseElement3' style='display:none' cx='0' cy='0' rx='0' ry='0'/>
+  <ellipse id='ellipseElement4' style='display:contents' cx='0' cy='0' rx='0' ry='0'/>
+  <ellipse id='ellipseElement5' style='display:none' cx='' cy='' rx='' ry=''/>
+  <ellipse id='ellipseElement6' style='display:contents' cx='' cy='' rx='' ry=''/>
+  <ellipse id='ellipseElement7' style='display:none' cx='0' cy='0'/>
+  <ellipse id='ellipseElement8' style='display:contents' cx='0' cy='0'/>
+  <ellipse id='ellipseElement9' style='display:none' rx='0' ry='0'/>
+  <ellipse id='ellipseElement10' style='display:contents' rx='0' ry='0'/>
+  <h:script src="/resources/testharness.js"/>
+  <h:script src="/resources/testharnessreport.js"/>
+  <script>
+test(function() {
+    let path = document.getElementById('pathElement1');
+    assert_throws_dom("InvalidStateError", function() { path.getPointAtLength(300); });
+});
+
+test(function() {
+    let path = document.getElementById('pathElement2');
+    assert_throws_dom("InvalidStateError", function() { path.getPointAtLength(300); });
+});
+
+test(function() {
+    let path = document.getElementById('pathElement3');
+    assert_throws_dom("InvalidStateError", function() { path.getPointAtLength(300); });
+});
+
+test(function() {
+    let path = document.getElementById('pathElement4');
+    assert_throws_dom("InvalidStateError", function() { path.getPointAtLength(300); });
+});
+
+test(function() {
+    let rect = document.getElementById('rectElement1');
+    assert_throws_dom("InvalidStateError", function() { rect.getPointAtLength(300); });
+});
+
+test(function() {
+    let rect = document.getElementById('rectElement2');
+    assert_throws_dom("InvalidStateError", function() { rect.getPointAtLength(300); });
+});
+
+test(function() {
+    let rect = document.getElementById('rectElement3');
+    assert_throws_dom("InvalidStateError", function() { rect.getPointAtLength(300); });
+});
+
+test(function() {
+    let rect = document.getElementById('rectElement4');
+    assert_throws_dom("InvalidStateError", function() { rect.getPointAtLength(300); });
+});
+
+test(function() {
+    let rect = document.getElementById('rectElement5');
+    assert_throws_dom("InvalidStateError", function() { rect.getPointAtLength(300); });
+});
+
+test(function() {
+    let rect = document.getElementById('rectElement6');
+    assert_throws_dom("InvalidStateError", function() { rect.getPointAtLength(300); });
+});
+
+test(function() {
+    let circle = document.getElementById('circleElement1');
+    assert_throws_dom("InvalidStateError", function() { circle.getPointAtLength(300); });
+});
+
+test(function() {
+    let circle = document.getElementById('circleElement2');
+    assert_throws_dom("InvalidStateError", function() { circle.getPointAtLength(300); });
+});
+
+test(function() {
+    let circle = document.getElementById('circleElement3');
+    assert_throws_dom("InvalidStateError", function() { circle.getPointAtLength(300); });
+});
+
+test(function() {
+    let circle = document.getElementById('circleElement4');
+    assert_throws_dom("InvalidStateError", function() { circle.getPointAtLength(300); });
+});
+
+test(function() {
+    let circle = document.getElementById('circleElement5');
+    assert_throws_dom("InvalidStateError", function() { circle.getPointAtLength(300); });
+});
+
+test(function() {
+    let circle = document.getElementById('circleElement6');
+    assert_throws_dom("InvalidStateError", function() { circle.getPointAtLength(300); });
+});
+
+test(function() {
+    let polygon = document.getElementById('polygonElement1');
+    assert_throws_dom("InvalidStateError", function() { polygon.getPointAtLength(300); });
+});
+
+test(function() {
+    let polygon = document.getElementById('polygonElement2');
+    assert_throws_dom("InvalidStateError", function() { polygon.getPointAtLength(300); });
+});
+
+test(function() {
+    let polygon = document.getElementById('polygonElement3');
+    assert_throws_dom("InvalidStateError", function() { polygon.getPointAtLength(300); });
+});
+
+test(function() {
+    let polygon = document.getElementById('polygonElement4');
+    assert_throws_dom("InvalidStateError", function() { polygon.getPointAtLength(300); });
+});
+
+test(function() {
+    let polyline = document.getElementById('polylineElement1');
+    assert_throws_dom("InvalidStateError", function() { polyline.getPointAtLength(300); });
+});
+
+test(function() {
+    let polyline = document.getElementById('polylineElement2');
+    assert_throws_dom("InvalidStateError", function() { polyline.getPointAtLength(300); });
+});
+
+test(function() {
+    let polyline = document.getElementById('polylineElement3');
+    assert_throws_dom("InvalidStateError", function() { polyline.getPointAtLength(300); });
+});
+
+test(function() {
+    let polyline = document.getElementById('polylineElement4');
+    assert_throws_dom("InvalidStateError", function() { polyline.getPointAtLength(300); });
+});
+
+test(function() {
+    let ellipse = document.getElementById('ellipseElement1');
+    assert_throws_dom("InvalidStateError", function() { ellipse.getPointAtLength(300); });
+});
+
+test(function() {
+    let ellipse = document.getElementById('ellipseElement2');
+    assert_throws_dom("InvalidStateError", function() { ellipse.getPointAtLength(300); });
+});
+
+test(function() {
+    let ellipse = document.getElementById('ellipseElement3');
+    assert_throws_dom("InvalidStateError", function() { ellipse.getPointAtLength(300); });
+});
+
+test(function() {
+    let ellipse = document.getElementById('ellipseElement4');
+    assert_throws_dom("InvalidStateError", function() { ellipse.getPointAtLength(300); });
+});
+
+test(function() {
+    let ellipse = document.getElementById('ellipseElement5');
+    assert_throws_dom("InvalidStateError", function() { ellipse.getPointAtLength(300); });
+});
+test(function() {
+    let ellipse = document.getElementById('ellipseElement6');
+    assert_throws_dom("InvalidStateError", function() { ellipse.getPointAtLength(300); });
+});
+
+test(function() {
+    let ellipse = document.getElementById('ellipseElement7');
+    assert_throws_dom("InvalidStateError", function() { ellipse.getPointAtLength(300); });
+});
+
+test(function() {
+    let ellipse = document.getElementById('ellipseElement8');
+    assert_throws_dom("InvalidStateError", function() { ellipse.getPointAtLength(300); });
+});
+
+test(function() {
+    let ellipse = document.getElementById('ellipseElement9');
+    assert_throws_dom("InvalidStateError", function() { ellipse.getPointAtLength(300); });
+});
+
+test(function() {
+    let ellipse = document.getElementById('ellipseElement10');
+    assert_throws_dom("InvalidStateError", function() { ellipse.getPointAtLength(300); });
+});
+  </script>
+</svg>
